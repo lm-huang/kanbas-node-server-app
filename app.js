@@ -14,10 +14,7 @@ import session from "express-session"
 
 const app = express();
 
-app.use(cors({
-    credentials: true,
-    origin: process.env.FRONTEND_URL
-}));
+app.use(cors());
 const sessionOptions = {
     secret: "any string", resave: false, saveUninitialized: false,
 };
