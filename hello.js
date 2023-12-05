@@ -6,9 +6,5 @@ const Hello = (app) => {
   app.get("/", (req, res) => {
     res.send("Welcome to Full Stack Development!");
   });
-
-  app.get("/a5/todos/create", (req, res) => {
-    res.send("sbba ");
-  });
 };
 export default Hello;
