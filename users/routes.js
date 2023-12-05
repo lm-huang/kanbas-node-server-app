@@ -49,6 +49,7 @@ function UserRoutes(app) {
     };
 
     const account = async (req, res) => {
+        console.log(req.session['currentUser']);
         res.json(req.session['currentUser']);
     };
 
